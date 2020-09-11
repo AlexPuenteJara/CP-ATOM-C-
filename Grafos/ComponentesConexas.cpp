@@ -1,5 +1,4 @@
-/*Cuenta la cantidad de componentes conexas
-e imprime cada una de estas compoentes*/
+/*Cuenta la cantidad de componentes conexas e imprime cada una de estas compoentes*/
 #include <bits/stdc++.h>
 using namespace std;
 #define fastio ios_base::sync_with_stdio(false);cin.tie(NULL)
@@ -20,9 +19,9 @@ vector<int> comp ;
 6 7
 */
 void dfs(int v) {//recorre una componente conexa
-    used[v] = true ;
+used[v] = true ;
 
-    comp.push_back(v);//vértice por vértice almacena los nodos.
+comp.push_back(v);//vértice por vértice almacena los nodos.
     for (size_t i = 0; i < (int) g[v].size(); ++i) {//recorre todos los nodos hijos
         int to = g[v][i];
         if (!used[to])//si el nodo no está visitado entonces realiza el dsf del hijo
@@ -32,9 +31,9 @@ void dfs(int v) {//recorre una componente conexa
 
 void find_comps() {//es el solve encuentra las componentes
     for (int i = 0; i < n ; ++i)
-        used [i] = false;//inicializa a todos los nodos en false(no visitado)
+    used [i] = false;//inicializa a todos los nodos en false(no visitado)
     for (int i = 0; i < n ; ++i)
-        if (!used[i]) {
+    if (!used[i]) {
             comp.clear();//limpia la componente conexa anterior
             dfs(i);//almacena la nueva componente conexa en comp
             cont++;
@@ -54,12 +53,11 @@ int main ()
 
   for(int i=0;i<m;i++)//ingreso de datos
   {
-  	cin>>a>>b;
+  cin>>a>>b;
   	a--;b--;//comenzamos del nodo 0, pero por el teclado es nodo 1
   	g[a].push_back(b);
   	g[b].push_back(a);
 
-  }
- find_comps();
+  }find_comps();
  cout<<"Existen "<<cont<<" componentes conexas";
   }
