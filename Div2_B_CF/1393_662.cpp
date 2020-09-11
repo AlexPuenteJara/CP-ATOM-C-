@@ -11,11 +11,11 @@ using namespace std;
 #define fastio ios_base::sync_with_stdio(false);cin.tie(NULL)
 #define f(i,a,b) for( ll i = a; i < b ; i++ )
 typedef long long ll;
-typedef pair<int, int> ii;
-typedef vector<int> vi;
-typedef vector<ii> vii;
-int n,cont=0;
-const int MAXN=1e5;
+typedef pair<int, int> ii;Hi naninjnnj
+typedef vector<int> vi;holaa, escribe please
+typedef vector<ii> vii;holi aqui toy
+int n,cont=0; ah ya chevre manita
+const int MAXN=1e5;ok manito
 vector<int> g[MAXN] ;
 bool used[MAXN] ;
 vector<int> comp ;
