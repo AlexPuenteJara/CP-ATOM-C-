@@ -31,15 +31,21 @@ vector<int> comp ;
 int main ()
 {
   fastio;
-    int t; cin >> t;
-    while(t--)
-    {
+    int n; cin >> n; //cantidad inicial de tablones en la empresa de la amiga de Applejack
+  int p; cin>>p;
 
 
-      cout<<"\n";
-    }
+if(n==1){cout<<p;}
+else{
+  cout<<p+(p-2)*(n-1);
 
+}
+
+
+
+
+  cout<<"\n";
 
 
   	return 0;
-}
+  }

@@ -26,14 +26,37 @@ vector<int> comp ;
 + 2
 
 */
-
-
 int main ()
 {
   fastio;
-    int n; cin >> n; //cantidad inicial de tablones en la empresa de la amiga de Applejack
+  int kil,gaso,come,cant=0,mcm;
+  cin >> kil>>gaso>>come;
 
 
+  cant+=kil/gaso;
+  if(kil%gaso==0)cant--;
 
-  	return 0;
+
+  cant+=kil/come;
+  if(kil%come==0)cant--;
+  mcm=gaso*come/__gcd(gaso,come);
+
+  if(mcm>=kil)
+  {
+    cout<<cant;
+  }
+  else
+  {
+    if(kil%mcm==0)
+    {
+      cant-=kil/mcm;
+      cout<<cant+1;
+    }else{
+    cant-=kil/mcm;
+    cout<<cant;
+    }
+  }
+
+  cout<<"\n";
+	return 0;
   }
