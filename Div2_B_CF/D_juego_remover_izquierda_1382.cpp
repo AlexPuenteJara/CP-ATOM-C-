@@ -12,7 +12,7 @@ CASO 1(todas las bolsas son ==1): Necesariamente cada jugador debe sacar en la r
 su respectivo turno, por lo tanto solo importa la paridad
 
 CASO 2(existe una bolsa que sea !=1): El primero que escoja en una bolsa que tiene >1 piedras,tiene la opcion de sacar
-hasta que solo quede 1(para que el agarre de la siguiente bolsa necesariamente) o sacar todos las piedras
+hasta que solo quede 1(para que él agarre de la siguiente bolsa necesariamente) o sacar todos las piedras
 (para que el 2 jugador agarre de la siguente bolsa necesariamente).Asi que tendria su estrategia
 ganadora
 */

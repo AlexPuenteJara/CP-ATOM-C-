@@ -30,9 +30,7 @@ vector<int> comp ;
 + 2
 - 1
 + 2
-
 */
-
 
 int main ()
 {
